@@ -24,6 +24,10 @@
 
 ![alt text](RestClient/src/main/resources/static/img/Login.JPG)
 
+Аутентификация с помощю Google:
+
+![alt text](RestClient/src/main/resources/static/img/Google.JPG)
+
 Страница пользователя
 
 ![alt text](RestClient/src/main/resources/static/img/UserPage.JPG)
