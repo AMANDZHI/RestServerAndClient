@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link th:href="@{css/crudApp.css}" rel="stylesheet"/>
+    <title>HomeFinance</title>
+</head>
+<body>
+<form class="form-signin" th:action="@{/login}" action="/login" method="post">
+    <h5>Войти с помощью</h5>
+    <a href="/login/google">Google</a>
+    <h2 class="form-signin-heading">Please sign in</h2>
+
+    <div th:if="${param.error}">
+        <div class="alert alert-danger" role="alert">
+            Invalid username and password.
+        </div>
+    </div>
+    <div th:if="${param.logout}">
+        <div class="alert alert-info" role="alert">Вы вышли.</div>
+    </div>
+    <label for="inputLogin" class="sr-only">Login</label>
+    <input type="text" id="inputLogin" name="username" class="form-control" placeholder="login"
+           th:required="required" th:autofocus="autofocus"/>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password"
+           th:required="required"/>
+    <button class="btn btn-lg btn-primary btn-block bg-dark" type="submit">Sign in</button>
+</form>
+</body>
+</html>

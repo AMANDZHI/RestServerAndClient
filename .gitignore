@@ -1,0 +1,9 @@
+.idea/
+*.iml
+target/
+RestClient/.idea/
+RestClient/*.iml
+RestClient/target/
+RestServer/.idea/
+RestServer/*.iml
+RestServer/target/
